@@ -9,7 +9,6 @@ public static void main(String[] args) {
 	String[] Array2 = new String[20];
 	double Hab = 0;
 	double Hab2 = 0;
-	int clas = 20;
 	
 	for (int i = 0; i<20; i++) {
 		
@@ -35,12 +34,9 @@ public static void main(String[] args) {
 		Hab += Array[i] * temp; 
 		Hab2 += Array[i];
 		}
-		else if ( temp >= 1000) {
-			clas--;
-		
-		}
-		
+
 	}
+	scan.close();
 	
 	
 	System.out.println(String.format("%.6f", (double)Hab/Hab2));
